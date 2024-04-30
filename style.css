@@ -5,105 +5,115 @@
     position: relative;
     border: none;
     outline: none;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
 }
 
 
-.section{
-    padding:  12px 32px ;
-
-display: flex;
-flex-direction: column;
+.section {
+    padding: 12px 32px;
+    display: flex;
+    flex-direction: column;
 
 }
 
-h1{
+h1 {
+    padding: 6px;
+    font-size: 48px;
+}
+
+.heading {
     margin-bottom: 30px;
 }
 
-.stor-item{
+.heading::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120px;
+    height: 5px;
+    border-radius: 60px;
+    background-color: #007BFF;
+}
+
+.stor-item {
     width: 100%;
     min-width: 380px;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #32323232; 
-    background-color:  #FBFBFB;
+    border: 1px solid #32323232;
+    background-color: #FBFBFB;
     display: flex;
     justify-content: space-between;
 }
 
-.left-site{
+.left-site {
     display: flex;
 }
 
-.img{
-    
+.img {
     margin-right: 20px;
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-label{
+label {
     font-weight: 700;
 }
 
-.price{ 
-display: flex;
-justify-content: space-around;
-
+.price {
+    display: flex;
+    gap: 6px;
 }
 
-.green{
-    color:
-    #28A745 ;
+.green {
+    color:#28A745;
 }
 
-.red{
-    color:#DC3545 ;
+.red {
+    color: #DC3545;
     font-size: small;
     text-decoration-line: line-through;
+    display: flex;
+    align-items: flex-end;
 }
 
-.rigt-side{
+.rigt-side {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.del-item{
-    background-color:#FBFBFB;
-    /* width: 20px; */
-    /* aspect-ratio: 1/1; */
+.del-item {
+    background-color: #FBFBFB;
     margin-left: 40px;
-
 }
 
-.counter{
+.counter {
     display: flex;
     gap: 6px;
     width: 60px;
-    
-    
 }
 
-.minus-btn{
+.minus-btn {
     width: 20px;
     height: 20px;
-    background-color:#FBFBFB;
+    background-color: #FBFBFB;
 }
 
-.number{
+.number {
     width: 20px;
     height: 20px;
     text-align: center;
-    
 }
 
-.plus-btn{
+.plus-btn {
     width: 20px;
     height: 20px;
-    background-color:#FBFBFB;
+    background-color: #FBFBFB;
 }
