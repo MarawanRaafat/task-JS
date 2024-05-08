@@ -82,10 +82,10 @@ label {
     align-items: flex-end;
 }
 
-.rigt-side {
+.right-side {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-around;
 }
 
 .del-item {
@@ -97,7 +97,7 @@ label {
     display: flex;
     gap: 6px;
     width: 66px;
-    bottom: 100%;
+    
 }
 
 .minus-btn {
