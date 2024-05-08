@@ -14,7 +14,6 @@
     padding: 12px 32px;
     display: flex;
     flex-direction: column;
-
 }
 
 h1 {
@@ -86,7 +85,7 @@ label {
 .rigt-side {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-between; */
 }
 
 .del-item {
@@ -97,7 +96,8 @@ label {
 .counter {
     display: flex;
     gap: 6px;
-    width: 60px;
+    width: 66px;
+    bottom: 100%;
 }
 
 .minus-btn {
@@ -109,7 +109,9 @@ label {
 .number {
     width: 20px;
     height: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .plus-btn {
