@@ -59,18 +59,33 @@ products.forEach(product => {
         </div>
         </div>
         `;
+
+
+
+    const plus = document.querySelector(".plus-btn");
+    const minus = document.querySelector(".minus-btn");
+    const delBtn = document.querySelector(".del-item");
+
+    plus.addEventListener("click", function () {
+        const changeNumber = document.querySelector(".number")
+        product.amount += 1
+        changeNumber.textContent = product.amount
+    })
+
+    minus.addEventListener("click", function () {
+        const changeNumber = document.querySelector(".number")
+        if (changeNumber.textContent > 1) {
+            product.amount -= 1
+            changeNumber.textContent = product.amount
+        }
+    });
+
+    
+        
+        delBtn.addEventListener( "click" ,function (el) {
+            el.target.closest(".stor-item").remove();  
+        });
+    
 });
-
-
-
-const changeNumber = document.querySelector(".number").textContent
-const plus = document.querySelector(".plus-btn").onclick;
-const minus = document.querySelector(".minus-btn");
-
-
-// plus.forEach(mathPlus , function randSumSub(changeNumber, ) {
-//    result = changeNumber + 1 ;
-//    return result;
-// })
 
 
